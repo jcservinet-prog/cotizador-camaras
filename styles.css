@@ -29,7 +29,7 @@ body {
   padding-bottom: 8px;
 }
 
-/* ENCABEZADO UNIFICADO Y CENTRADO */
+/* ENCABEZADO CENTRADO */
 .logo-title-block {
   display: flex;
   flex-direction: column;
@@ -68,7 +68,7 @@ body {
   text-align: center;
 }
 
-/* NÚMERO DE COTIZACIÓN ALINEADO A LA DERECHA */
+/* COTIZACIÓN Nº A LA DERECHA */
 .folio-row {
   display: flex;
   justify-content: flex-end;
@@ -88,7 +88,7 @@ body {
   border: 1px dashed #ccc;
 }
 
-/* FILAS DE CLIENTE CON TEXTO CENTRADO */
+/* FILAS DEL CLIENTE */
 .row {
   display: flex;
   align-items: center;
@@ -110,6 +110,18 @@ body {
   outline: none;
   background: transparent;
   font-size: 13px;
+}
+
+/* FORZAR CENTRADO EN CAMPOS DE FECHA EN DISPOSITIVOS MÓVILES */
+input[type="date"] {
+  text-align: center !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+input[type="date"]::-webkit-date-and-time-value {
+  text-align: center !important;
 }
 
 /* UTILIDADES DE ALINEACIÓN DE TEXTO */
@@ -281,7 +293,7 @@ body {
   background-color: #004085;
 }
 
-/* REGLAS PARA EXPORTACIÓN Y PDF (CARTA / OFICIO EN 1 HOJA) */
+/* REGLAS PARA IMPRESIÓN Y PDF EN 1 HOJA */
 @media print {
   @page {
     size: auto;
