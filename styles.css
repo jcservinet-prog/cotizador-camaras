@@ -1,0 +1,312 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5 !important;
+  color: #333333 !important;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 520px;
+  margin: auto;
+}
+
+.ticket {
+  border: 2px solid #0056b3;
+  padding: 20px;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #000000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.ticket-header {
+  border-bottom: 2px solid #0056b3;
+  padding-bottom: 10px;
+}
+
+.logo-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.header-logo {
+  width: 95px;
+  height: auto;
+  object-fit: contain;
+}
+
+.title-text h3 {
+  margin: 0;
+  color: #0056b3;
+  font-size: 22px;
+}
+
+.title-text p {
+  margin: 2px 0 0 0;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.title-text small {
+  color: #555;
+  font-size: 11px;
+}
+
+.folio-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+  color: #d9534f;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.folio-row input {
+  color: #d9534f;
+  font-weight: bold;
+  font-size: 16px;
+  width: 100px;
+  border: 1px dashed #ccc;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  gap: 10px;
+}
+
+.row label {
+  font-weight: bold;
+  min-width: 80px;
+}
+
+.row input {
+  flex: 1;
+  padding: 6px;
+  border: none;
+  border-bottom: 1px solid #0056b3;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+}
+
+.section-title {
+  color: #0056b3;
+  margin: 15px 0 10px 0;
+  font-size: 13px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 5px;
+}
+
+/* FILAS DE ARTÍCULOS */
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px dashed #eee;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-info label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.item-info small {
+  color: #666;
+  font-size: 11px;
+}
+
+.item-qty {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.item-qty input {
+  width: 55px;
+  padding: 4px;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #0056b3;
+  border-radius: 4px;
+}
+
+.item-qty input.custom-price-input {
+  width: 80px !important;
+  text-align: right;
+}
+
+.flex-select {
+  padding: 5px;
+  border: 1px solid #0056b3;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.check-lg {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* TOTALES Y DESCUENTO */
+.totals-section {
+  background: #f8f9fa;
+  padding: 12px;
+  border-radius: 6px;
+  margin-top: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.discount-input-row {
+  align-items: center;
+  color: #d9534f;
+}
+
+.discount-input-row input {
+  width: 65px;
+  padding: 4px;
+  text-align: center;
+  font-weight: bold;
+  color: #d9534f;
+  border: 1px solid #d9534f;
+  border-radius: 4px;
+}
+
+.cuota-box {
+  background: #e6f0fa;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid #0056b3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  color: #0056b3;
+  border-radius: 4px;
+}
+
+.comentarios-box {
+  margin-top: 15px;
+}
+
+.section-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #0056b3;
+  font-size: 13px;
+}
+
+.comentarios-box textarea {
+  width: 100%;
+  height: 60px;
+  padding: 8px;
+  border: 1px solid #0056b3;
+  border-radius: 4px;
+  font-size: 13px;
+  outline: none;
+  resize: vertical;
+}
+
+.ticket-footer {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.actions {
+  margin-top: 15px;
+}
+
+.btn-print {
+  width: 100%;
+  padding: 12px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-print:hover {
+  background-color: #004085;
+}
+
+/* REGLAS EXCLUSIVAS PARA EXPORTACIÓN EN PDF / IMPRESIÓN */
+@media print {
+  @page {
+    size: 140mm 215mm;
+    margin: 4mm;
+  }
+
+  body {
+    background: white !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .actions {
+    display: none !important;
+  }
+
+  /* OCULTA LOS PRECIOS INDIVIDUALES, SUBTOTALES Y DESCUENTOS EN EL PDF */
+  .precio-interno {
+    display: none !important;
+  }
+
+  .ticket {
+    box-shadow: none !important;
+    border: 2px solid #000000 !important;
+    padding: 12px !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+  }
+
+  input, select, textarea {
+    border: none !important;
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    background: transparent !important;
+  }
+
+  .comentarios-box textarea {
+    border: 1px solid #000000 !important;
+  }
+}
