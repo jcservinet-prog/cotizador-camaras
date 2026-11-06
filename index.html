@@ -23,29 +23,30 @@
         </div>
         <div class="folio-row">
           <label>Cotización Nº</label>
-          <input type="text" id="folio" value="COT-001">
+          <input type="text" id="folio" value="COT-001" class="text-center">
         </div>
       </div>
 
       <div class="ticket-body">
+        <!-- DATOS DEL CLIENTE CON TEXTO CENTRADO -->
         <div class="row">
           <label>Fecha:</label>
-          <input type="date" id="fecha">
+          <input type="date" id="fecha" class="text-center">
         </div>
 
         <div class="row">
           <label>Cliente:</label>
-          <input type="text" id="nombre" placeholder="Nombre completo del cliente">
+          <input type="text" id="nombre" placeholder="Nombre completo del cliente" class="text-center">
         </div>
 
         <div class="row">
           <label>Teléfono:</label>
-          <input type="text" id="telefono" placeholder="Número de teléfono">
+          <input type="text" id="telefono" placeholder="Número de teléfono" class="text-center">
         </div>
 
         <div class="row">
           <label>Dirección:</label>
-          <input type="text" id="direccion" placeholder="Escriba la dirección o ubicación del cliente">
+          <input type="text" id="direccion" placeholder="Escriba la dirección o ubicación del cliente" class="text-center">
         </div>
 
         <hr>
@@ -60,7 +61,7 @@
           </div>
           <div class="item-qty">
             <label>Cant:</label>
-            <input type="number" id="cantCamaras" min="0" value="2" class="calc-trigger">
+            <input type="number" id="cantCamaras" min="0" value="2" class="calc-trigger text-center">
           </div>
         </div>
 
@@ -94,7 +95,7 @@
         <div class="item-row">
           <div class="item-info">
             <label>Kits de Conexión, Fuentes y Cajas de Registro</label>
-            <small class="precio-interno">Baluns y cajas (Q 45/cam)</small>
+            <small>Baluns, fuentes de poder y cajas térmicas</small>
           </div>
           <input type="checkbox" id="chkAccesorios" class="calc-trigger check-lg" checked>
         </div>
@@ -118,18 +119,19 @@
           </div>
           <div class="item-qty">
             <label>Mts:</label>
-            <input type="number" id="cantMetros" min="1" value="10" class="calc-trigger">
+            <input type="number" id="cantMetros" min="1" value="10" class="calc-trigger text-center">
           </div>
         </div>
 
-        <!-- MANO DE OBRA -->
+        <!-- MANO DE OBRA Y SERVICIO ADICIONAL (PRECIO VISIBLE EN PDF) -->
         <div class="item-row">
           <div class="item-info">
-            <label>Detalles Adicionales:</label>
+            <label>Mano de Obra, Instalación y Configuración</label>
+            <small>Instalación profesional y soporte</small>
           </div>
-          <div class="item-qty precio-interno">
+          <div class="item-qty">
             <label>Q</label>
-            <input type="number" id="inputManoObra" min="0" placeholder="0.00" value="200" class="calc-trigger custom-price-input">
+            <input type="number" id="inputManoObra" min="0" placeholder="0.00" value="200" class="calc-trigger custom-price-input text-right">
           </div>
         </div>
 
@@ -145,12 +147,11 @@
           <div class="total-row discount-input-row precio-interno">
             <label for="inputDescuento">Descuento Especial (%):</label>
             <div class="item-qty">
-              <input type="number" id="inputDescuento" min="0" max="100" placeholder="0" value="0" class="calc-trigger">
+              <input type="number" id="inputDescuento" min="0" max="100" placeholder="0" value="0" class="calc-trigger text-center">
               <span>%</span>
             </div>
           </div>
 
-          <!-- LO ÚNICO QUE VERÁ EL CLIENTE EN EL PDF -->
           <div class="cuota-box">
             <label>TOTAL DEL SERVICIO: Q</label>
             <span id="lblTotalFinal">0.00</span>
@@ -158,7 +159,7 @@
         </div>
 
         <div class="comentarios-box">
-          <label class="section-label">Observaciones o detalles:</label>
+          <label class="section-label">Observaciones o Notas de Garantía:</label>
           <textarea id="comentarios"></textarea>
         </div>
 

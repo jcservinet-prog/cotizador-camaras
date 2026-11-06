@@ -26,7 +26,7 @@ body {
 
 .ticket-header {
   border-bottom: 2px solid #0056b3;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
 }
 
 .logo-title-row {
@@ -37,7 +37,7 @@ body {
 }
 
 .header-logo {
-  width: 95px;
+  width: 90px;
   height: auto;
   object-fit: contain;
 }
@@ -45,12 +45,12 @@ body {
 .title-text h3 {
   margin: 0;
   color: #0056b3;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .title-text p {
   margin: 2px 0 0 0;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -66,23 +66,22 @@ body {
   gap: 5px;
   color: #d9534f;
   font-weight: bold;
-  font-size: 16px;
-  margin-top: 8px;
+  font-size: 15px;
+  margin-top: 6px;
 }
 
 .folio-row input {
   color: #d9534f;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 15px;
   width: 100px;
   border: 1px dashed #ccc;
-  text-align: center;
 }
 
 .row {
   display: flex;
   align-items: center;
-  margin: 8px 0;
+  margin: 6px 0;
   gap: 10px;
 }
 
@@ -93,21 +92,30 @@ body {
 
 .row input {
   flex: 1;
-  padding: 6px;
+  padding: 5px;
   border: none;
   border-bottom: 1px solid #0056b3;
   outline: none;
   background: transparent;
-  font-size: 14px;
+  font-size: 13px;
+}
+
+/* UTILIDADES DE ALINEACIÓN DE TEXTO */
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
 }
 
 .section-title {
   color: #0056b3;
-  margin: 15px 0 10px 0;
-  font-size: 13px;
+  margin: 10px 0 8px 0;
+  font-size: 12px;
   text-align: center;
   border-bottom: 1px solid #e0e0e0;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
 }
 
 /* FILAS DE ARTÍCULOS */
@@ -115,7 +123,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 0;
+  padding: 6px 0;
   border-bottom: 1px dashed #eee;
 }
 
@@ -126,7 +134,7 @@ body {
 
 .item-info label {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .item-info small {
@@ -142,8 +150,7 @@ body {
 
 .item-qty input {
   width: 55px;
-  padding: 4px;
-  text-align: center;
+  padding: 3px;
   font-weight: bold;
   border: 1px solid #0056b3;
   border-radius: 4px;
@@ -151,28 +158,28 @@ body {
 
 .item-qty input.custom-price-input {
   width: 80px !important;
-  text-align: right;
 }
 
 .flex-select {
-  padding: 5px;
+  padding: 4px;
   border: 1px solid #0056b3;
   border-radius: 4px;
-  font-size: 13px;
+  font-size: 12px;
+  background-color: #ffffff;
 }
 
 .check-lg {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   cursor: pointer;
 }
 
 /* TOTALES Y DESCUENTO */
 .totals-section {
   background: #f8f9fa;
-  padding: 12px;
+  padding: 10px;
   border-radius: 6px;
-  margin-top: 10px;
+  margin-top: 8px;
   border: 1px solid #e0e0e0;
 }
 
@@ -180,8 +187,8 @@ body {
   display: flex;
   justify-content: space-between;
   font-weight: bold;
-  font-size: 15px;
-  margin-bottom: 6px;
+  font-size: 14px;
+  margin-bottom: 4px;
 }
 
 .discount-input-row {
@@ -190,9 +197,8 @@ body {
 }
 
 .discount-input-row input {
-  width: 65px;
-  padding: 4px;
-  text-align: center;
+  width: 60px;
+  padding: 3px;
   font-weight: bold;
   color: #d9534f;
   border: 1px solid #d9534f;
@@ -201,45 +207,45 @@ body {
 
 .cuota-box {
   background: #e6f0fa;
-  padding: 10px;
-  font-size: 18px;
+  padding: 8px;
+  font-size: 17px;
   font-weight: bold;
   border: 2px solid #0056b3;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  margin-top: 10px;
+  margin-top: 8px;
   color: #0056b3;
   border-radius: 4px;
 }
 
 .comentarios-box {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .section-label {
   display: block;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   color: #0056b3;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .comentarios-box textarea {
   width: 100%;
-  height: 60px;
-  padding: 8px;
+  height: 50px;
+  padding: 6px;
   border: 1px solid #0056b3;
   border-radius: 4px;
-  font-size: 13px;
+  font-size: 12px;
   outline: none;
   resize: vertical;
 }
 
 .ticket-footer {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 10px;
   font-weight: bold;
 }
 
@@ -263,21 +269,24 @@ body {
   background-color: #004085;
 }
 
-/* REGLAS EXCLUSIVAS PARA EXPORTACIÓN EN PDF / IMPRESIÓN */
+/* REGLAS DINO-ADAPTABLES PARA IMPRESIÓN (CARTA / OFICIO EN 1 SOLA HOJA) */
 @media print {
   @page {
-    size: 140mm 215mm;
-    margin: 4mm;
+    size: auto; /* Permite cambiar dinámicamente entre Carta, Oficio o A4 */
+    margin: 8mm; /* Margen de seguridad */
   }
 
-  body {
+  html, body {
     background: white !important;
     padding: 0 !important;
     margin: 0 !important;
+    height: 100%;
+    overflow: hidden; /* Previene hojas secundarias en blanco */
   }
 
   .container {
     max-width: 100% !important;
+    width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
   }
@@ -286,27 +295,34 @@ body {
     display: none !important;
   }
 
-  /* OCULTA LOS PRECIOS INDIVIDUALES, SUBTOTALES Y DESCUENTOS EN EL PDF */
   .precio-interno {
     display: none !important;
   }
 
   .ticket {
     box-shadow: none !important;
-    border: 2px solid #000000 !important;
-    padding: 12px !important;
+    border: 2px solid #0056b3 !important;
+    padding: 10px 15px !important;
     margin: 0 auto !important;
     width: 100% !important;
+    page-break-inside: avoid; /* Bloquea la división en dos páginas */
+    break-inside: avoid;
   }
 
   input, select, textarea {
-    border: none !important;
-    appearance: none !important;
-    -webkit-appearance: none !important;
+    border-bottom: 1px solid #0056b3 !important;
     background: transparent !important;
   }
 
-  .comentarios-box textarea {
-    border: 1px solid #000000 !important;
+  select, input[type="number"], textarea {
+    border: 1px solid #0056b3 !important;
+    border-radius: 4px !important;
+  }
+
+  .cuota-box {
+    border: 2px solid #0056b3 !important;
+    background: #e6f0fa !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 }
